@@ -1,0 +1,60 @@
+- content_for :title do
+  Domésticanet - Como funciona
+.container
+  .row
+    .span8.offset2
+      %h3.title Como funciona?
+  .row
+    .span3.text-center.offset2
+      %h4 Você procura uma doméstica?
+    .span2
+    .span3.text-center
+      %h4 Você procura um emprego?
+  .row.step
+    .span3.offset2
+      %p.text-center
+        = link_to 'Publique sua vaga', :family
+        gratuitamente
+    .span2
+      = image_tag '/assets/signin.png'
+    .span3
+      %p.text-center
+        = link_to 'Publique seu currículo', :housemaid
+        gratuitamente
+  .row.step
+    .span3.offset2
+      %p.text-center Faça uma busca e consulte perfis detalhados de domésticas perto de sua casa
+    .span2
+      = image_tag '/assets/pin.png'
+    .span3
+      %p.text-center
+        Faça uma busca e consulte as melhores vagas perto de sua casa
+  .row.step
+    .span3.offset2
+      %p.text-center
+        Receba candidaturas
+        gratuitamente
+        e selecione os melhores perfis
+    .span2
+      = image_tag '/assets/compare.png'
+    .span3
+      %p.text-center
+        Candidate-se às melhores vagas e aguarde contato dos empregadores
+  .row.step
+    .span3.offset2
+      %p.text-center
+        Para entrar em contato com suas domésticas favoritas,
+        escolha um dos Planos de Acesso Premium à venda em nosso site.
+        Saiba mais,
+        = link_to 'acessando sua conta', :new_user_session
+        e clique em Torne-se Premium!
+    .span2
+      = image_tag '/assets/chat.png'
+    .span3
+      %p.text-center Seja chamada para entrevistas! Sua contratação só depende de você!
+  .row.step
+    .span3.text-center.offset2
+      = link_to 'Publicar vaga!', :family, class: 'btn btn-info action'
+    .span2
+    .span3.text-center
+      = link_to 'Publicar currículo!', :housemaid, class: 'btn btn-primary action'
